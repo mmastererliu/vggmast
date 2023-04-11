@@ -63,7 +63,7 @@ for epoch in range(epochs):
     print("测试集上的损失：{}".format(total_test))
     print("测试集上的精度：{:.1%}".format(total_accuracy/val_len))#百分数精度，正确预测的总和比测试集的长度
 
-    torch.save(net.state_dict(),"DogandCat.pth".format(epoch+1))
+    torch.save(net.state_dict(),"DogandCat{}.pth".format(epoch+1))
     print("模型已保存")
 
 
